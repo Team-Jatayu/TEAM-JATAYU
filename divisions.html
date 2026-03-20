@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Technical Divisions | Team Jatayu</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ================= GLOBAL ================= */
+:root{
+  --bg:#0b0d10;
+  --panel:#12151c;
+  --accent:#ff3c00;
+  --text:#e8e8e8;
+  --muted:#9aa0a6;
+  --border:rgba(255,255,255,.08);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter,system-ui;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{width:90%;max-width:1200px;margin:auto}
+.section{padding:110px 0}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  position:fixed;top:0;width:100%;z-index:1000;
+  background:rgba(11,13,16,.8);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-container{
+  height:72px;display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{
+  font-family:"Bebas Neue";
+  font-size:28px;
+  text-decoration:none;color:#fff;
+}
+.logo-accent{color:var(--accent)}
+.nav-menu{display:flex;gap:28px}
+.nav-link{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:500;
+}
+.nav-link.active,.nav-link:hover{color:#fff}
+
+/* ================= HERO ================= */
+.page-hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 30% 20%,rgba(255,60,0,.15),transparent 60%),
+    radial-gradient(circle at 70% 80%,rgba(255,60,0,.12),transparent 60%);
+}
+.page-title{
+  font-family:"Bebas Neue";
+  font-size:82px;
+  letter-spacing:4px;
+}
+.text-accent{color:var(--accent)}
+.page-subtitle{
+  max-width:720px;
+  margin:22px auto 0;
+  color:var(--muted);
+  font-size:18px;
+}
+
+/* ================= DIVISIONS ================= */
+.division-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+.division-grid.reverse{direction:rtl}
+.division-grid.reverse>*{direction:ltr}
+
+.division-number{
+  font-family:"Bebas Neue";
+  font-size:64px;
+  color:rgba(255,255,255,.08);
+}
+.division-title{
+  font-family:"Bebas Neue";
+  font-size:50px;
+}
+.division-tagline{
+  margin:8px 0 16px;
+  color:var(--accent);
+}
+.division-description{color:var(--muted)}
+
+.division-responsibilities ul{
+  margin-top:16px;
+  padding-left:18px;
+}
+.division-responsibilities li{margin-bottom:8px}
+
+.tool-tag{
+  display:inline-block;
+  margin:14px 12px 0 0;
+  padding:6px 14px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  font-size:12px;
+}
+
+.division-visual{
+  height:340px;
+  border-radius:22px;
+  border:1px solid var(--border);
+  background:linear-gradient(135deg,#1a1d25,#0b0d10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  font-weight:600;
+}
+
+.division-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 18px;
+  display: block;
+}
+
+
+/* ================= FOOTER ================= */
+.footer{
+  background:#080a0d;
+  border-top:1px solid var(--border);
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+}
+.footer a{
+  display:block;
+  color:var(--muted);
+  text-decoration:none;
+  margin-top:8px;
+}
+.footer a:hover{color:#fff}
+.footer-bottom{
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  color:var(--muted);
+}
+
+/* ================= ANIMATIONS ================= */
+.animate{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .9s cubic-bezier(.2,.6,.2,1);
+}
+.animate.show{
+  opacity:1;
+  transform:none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .division-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .page-title{font-size:58px}
+  .nav-menu{display:none}
+}
+
+/* ================= SOCIAL LINKS ================= */
+.social-links {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    background: var(--color-steel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--color-gray-light);
+    transition: stroke var(--transition-fast);
+}
+
+.social-link:hover {
+    background: var(--color-accent);
+}
+
+.social-link:hover svg {
+    stroke: var(--color-black);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a class="nav-logo">TEAM <span class="logo-accent">JATAYU</span></a>
+    <div class="nav-menu">
+      <a class="nav-link" href="team-jatayu-ONE-FILE.html">Home</a>
+      <a href="team-jatayu-ONE-FILE.html#about" class="nav-link">About</a>
+      <a href="team-jatayu-ONE-FILE.html#vehicle" class="nav-link">Vehicle</a>
+      <a class="nav-link active">Divisions</a>
+      <a class="nav-link" href="team.html">Team</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a href="team-jatayu-ONE-FILE.html#sponsors" class="nav-link">Sponsors</a>
+      <a href="team-jatayu-ONE-FILE.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div>
+    <h1 class="page-title animate">TECHNICAL <span class="text-accent">DIVISIONS</span></h1>
+    <p class="page-subtitle animate">
+      Five specialized divisions working in harmony to engineer victory.
+    </p>
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="section">
+  <div class="container division-grid">
+    <div class="animate">
+      <span class="division-number">01</span>
+      <h2 class="division-title">DESIGN</h2>
+      <p class="division-tagline">Where vision meets precision</p>
+      <p class="division-description">
+        The Design division is responsible for chassis architecture, aerodynamics,
+        CAD modeling, and structural optimization.
+      </p>
+      <div class="division-responsibilities">
+        <ul>
+          <li>Chassis & Aero Design</li>
+          <li>CAD & Simulation</li>
+          <li>Weight Optimization</li>
+        </ul>
+      </div>
+      <span class="tool-tag">SOLIDWORKS</span>
+      <span class="tool-tag">ANSYS</span>
+      <span class="tool-tag">CFD</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/design.png"></div>
+  </div>
+</section>
+
+<!-- POWERTRAIN -->
+<section class="section">
+  <div class="container division-grid reverse">
+    <div class="animate">
+      <span class="division-number">02</span>
+      <h2 class="division-title">POWERTRAIN</h2>
+      <p class="division-tagline">The heart of performance</p>
+      <p class="division-description">
+        Responsible for engine tuning, intake and exhaust systems,
+        cooling, and drivetrain optimization.
+      </p>
+      <span class="tool-tag">MATLAB</span>
+      <span class="tool-tag">ECU</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/powertrain.png"></div>
+  </div>
+</section>
+
+<!-- ELECTRICAL -->
+<section class="section">
+  <div class="container division-grid">
+    <div class="animate">
+      <span class="division-number">03</span>
+      <h2 class="division-title">ELECTRICAL</h2>
+      <p class="division-tagline">Powering the future</p>
+      <p class="division-description">
+        The Electrical division handles battery management, motor control,
+        power electronics, and electrical system integration.
+      </p>
+      <span class="tool-tag">Arduino</span>
+      <span class="tool-tag">CAN Bus</span>
+      <span class="tool-tag">Battery Management</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/electrical.png"></div>
+  </div>
+</section>
+
+<!-- SUSPENSION -->
+<section class="section">
+  <div class="container division-grid reverse">
+    <div class="animate">
+      <span class="division-number">04</span>
+      <h2 class="division-title">SUSPENSION</h2>
+      <p class="division-tagline">The backbone of the vehicle.</p>
+      <p class="division-description">
+        Responsible for adjust damping and ride height in real time 
+        based on driving conditions, speed, and driver input
+      </p>
+      <span class="tool-tag">LOTUSM</span>
+      <span class="tool-tag">SOLIDWORKS</span>
+      <span class="tool-tag">ANSYS</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/suspension.png"></div>
+  </div>
+</section>
+
+<!-- ELECTRONICS -->
+<section class="section">
+  <div class="container division-grid">
+    <div class="animate">
+      <span class="division-number">05</span>
+      <h2 class="division-title">ELECTRONICS</h2>
+      <p class="division-tagline">The brain of the vehicle</p>
+      <p class="division-description">
+        Focused on embedded systems, sensor integration, data acquisition,
+        telemetry, and real-time vehicle monitoring to support performance
+        analysis and informed engineering decisions.
+      </p>
+      <span class="tool-tag">PCB</span>
+      <span class="tool-tag">DAQ</span>
+      <span class="tool-tag">TELEMETRY</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/electronics.png"></div>
+  </div>
+</section>
+
+<!-- BRAKING -->
+<section class="section">
+  <div class="container division-grid reverse">
+    <div class="animate">
+      <span class="division-number">06</span>
+      <h2 class="division-title">BRAKING</h2>
+      <p class="division-tagline">Control, safety, and confidence</p>
+      <p class="division-description">
+        Responsible for the design, analysis, and validation of the braking system,
+        ensuring consistent stopping performance, driver safety, and compliance
+        with competition regulations.
+      </p>
+      <span class="tool-tag">BRAKE CALCULATION</span>
+      <span class="tool-tag">HYDRAULICS</span>
+      <span class="tool-tag">SAFETY</span>
+    </div>
+    <div class="division-visual animate"><img src="division_image/breaking.png"></div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                      <br>
+                        <span class="logo-text">TEAM</span>
+                        <span class="logo-accent">JATAYU</span>
+                    </a>
+                    <p>Engineering excellence in motorsport since 2013.</p>
+                </div>
+                <div class="footer-links">
+                  <br>
+                    <h4>Quick Links</h4>
+                    <a href="team-jatayu-ONE-FILE.html">Home</a>
+                    <a href="team-jatayu-ONE-FILE.html#about">About</a>
+                    <a href="team-jatayu-ONE-FILE.html#vehicle">Vehicle</a>
+                    <a href="divisions.html">Divisions</a>
+                </div>
+                <div class="footer-links">
+                  <br>
+                    <h4>Resources</h4>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="team-jatayu-ONE-FILE.html#sponsors">Sponsors</a>
+                    <a href="team-jatayu-ONE-FILE.html#contact">Contact</a>
+                </div>
+                <div class="footer-newsletter">
+                  <br>
+                    <h4>Stay Updated</h4>
+                    <p>Follow our journey to engineering excellence.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/teamjatayu/" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2013 Team Jatayu. All rights reserved.</p>
+                <p>Engineered with precision.</p>
+            </div>
+        </div>
+        <br>
+    </footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting)e.target.classList.add("show");
+  });
+},{threshold:.15});
+document.querySelectorAll(".animate").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

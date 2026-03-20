@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Team Jatayu Gallery - Explore our journey through images and videos showcasing our engineering excellence and competition moments.">
+<meta name="keywords" content="motorsport gallery, FSAE photos, racing team media, Team Jatayu">
+<title>Gallery | Team Jatayu</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">TEAM</span>
+                <span class="logo-accent">JATAYU</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="team-jatayu-ONE-FILE.html" class="nav-link">Home</a>
+                <a href="team-jatayu-ONE-FILE.html#about" class="nav-link">About</a>
+                <a href="team-jatayu-ONE-FILE.html#vehicle" class="nav-link">Vehicle</a>
+                <a href="divisions.html" class="nav-link">Divisions</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="team-jatayu-ONE-FILE.html#sponsors" class="nav-link">Sponsors</a>
+                <a href="team-jatayu-ONE-FILE.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero-compact">
+        <div class="hero-bg-container">
+            <div class="hero-parallax-layer" data-speed="0.3"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <span class="page-tag animate-on-scroll">Visual Journey</span>
+            <h1 class="page-title animate-on-scroll">
+                <span class="text-accent">GALLERY</span>
+            </h1>
+            <p class="page-subtitle animate-on-scroll">
+                Capturing moments of engineering excellence, competition intensity, 
+                and the spirit of Team Jatayu.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="gallery-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="vehicle">Vehicle</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+                <button class="filter-btn" data-filter="competition">Competition</button>
+                <button class="filter-btn" data-filter="workshop">Workshop</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery Item 1 - Large -->
+                <div class="gallery-item large animate-on-scroll" data-category="vehicle">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+                                <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+                                <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"/>
+                            </svg>
+                            <span>Vehicle Hero Shot</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Vehicle</span>
+                        <h4>The Machine</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item animate-on-scroll" data-category="team">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <span>Team Photo</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Team</span>
+                        <h4>The Engineers</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item animate-on-scroll" data-category="workshop">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                            <span>Workshop</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Workshop</span>
+                        <h4>Building Dreams</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 - Video -->
+                <div class="gallery-item video animate-on-scroll" data-category="competition">
+                    <div class="gallery-media">
+                        <div class="media-placeholder video-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Competition Video</span>
+                        </div>
+                        <div class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Competition</span>
+                        <h4>Race Day</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 - Tall -->
+                <div class="gallery-item tall animate-on-scroll" data-category="vehicle">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            <span>Wheel Detail</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Vehicle</span>
+                        <h4>Precision Engineering</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item animate-on-scroll" data-category="competition">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                                <line x1="4" y1="22" x2="4" y2="15"/>
+                            </svg>
+                            <span>Competition</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Competition</span>
+                        <h4>On Track</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item animate-on-scroll" data-category="workshop">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <span>CAD Work</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Workshop</span>
+                        <h4>Digital Design</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 - Wide -->
+                <div class="gallery-item wide animate-on-scroll" data-category="competition">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                            <span>Technical Inspection</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Competition</span>
+                        <h4>Tech Inspection</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item animate-on-scroll" data-category="team">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                            <span>Design Review</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Team</span>
+                        <h4>Design Meeting</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item animate-on-scroll" data-category="vehicle">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                            <span>Engine Bay</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Vehicle</span>
+                        <h4>Power Unit</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 - Video -->
+                <div class="gallery-item video animate-on-scroll" data-category="workshop">
+                    <div class="gallery-media">
+                        <div class="media-placeholder video-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Manufacturing Video</span>
+                        </div>
+                        <div class="play-button">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Workshop</span>
+                        <h4>Manufacturing</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item animate-on-scroll" data-category="team">
+                    <div class="gallery-media">
+                        <div class="media-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span>Award Ceremony</span>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Team</span>
+                        <h4>Recognition</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="gallery-load-more animate-on-scroll">
+                <p class="gallery-note">
+                    Add more images by inserting <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code> elements 
+                    into the gallery grid. The layout automatically adapts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media CTA Section -->
+    <section class="section media-cta-section">
+        <div class="container">
+            <div class="media-cta-content animate-on-scroll">
+                <h2>Media Inquiries</h2>
+                <p>
+                    For high-resolution images, video footage, or press materials, 
+                    please reach out to our media team.
+                </p>
+                <a href="index.html#contact" class="btn btn-primary">
+                    <span>Contact Media Team</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">TEAM</span>
+                        <span class="logo-accent">JATAYU</span>
+                    </a>
+                    <p>Engineering excellence in motorsport since 2018.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#vehicle">Vehicle</a>
+                    <a href="divisions.html">Divisions</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html#sponsors">Sponsors</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Follow our journey to engineering excellence.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/teamjatayu/" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Team Jatayu. All rights reserved.</p>
+                <p>Engineered with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</section>
+
+<script>
+/* ========================================
+   Team Jatayu - Main JavaScript
+   ======================================== */
+
+(function() {
+    'use strict';
+
+    /* ========================================
+       DOM Elements
+       ======================================== */
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const parallaxLayers = document.querySelectorAll('.hero-parallax-layer');
+    const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+
+    /* ========================================
+       Navigation
+       ======================================== */
+    
+    // Scroll handler for navbar
+    let lastScroll = 0;
+    
+    function handleNavbarScroll() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    }
+
+    // Mobile navigation toggle
+    function toggleMobileNav() {
+        navToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Close mobile nav on link click
+    function closeMobileNav() {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (navToggle) {
+        navToggle.addEventListener('click', toggleMobileNav);
+    }
+
+    if (navMenu) {
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+    }
+
+    /* ========================================
+       Scroll Animations
+       ======================================== */
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 0.1
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Add staggered delay based on index within viewport
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 50);
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const scrollObserver = new IntersectionObserver(observerCallback, observerOptions);
+
+    animatedElements.forEach(el => {
+        scrollObserver.observe(el);
+    });
+
+    /* ========================================
+       Parallax Effect
+       ======================================== */
+    
+    function handleParallax() {
+        const scrolled = window.pageYOffset;
+        
+        parallaxLayers.forEach(layer => {
+            const speed = parseFloat(layer.dataset.speed) || 0.5;
+            const yPos = -(scrolled * speed);
+            layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
+        });
+    }
+
+    /* ========================================
+       Counter Animation
+       ======================================== */
+    
+    function animateCounter(element) {
+        const target = parseInt(element.dataset.count, 10);
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+
+        function update() {
+            current += step;
+            if (current < target) {
+                element.textContent = Math.floor(current);
+                requestAnimationFrame(update);
+            } else {
+                element.textContent = target;
+            }
+        }
+
+        update();
+    }
+
+    // Observer for counter animations
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(num => {
+        counterObserver.observe(num);
+    });
+
+    /* ========================================
+       Smooth Scroll
+       ======================================== */
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const navHeight = navbar ? navbar.offsetHeight : 0;
+                const targetPosition = targetElement.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    /* ========================================
+       Contact Form Validation
+       ======================================== */
+    
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    function showError(inputId, message) {
+        const errorEl = document.getElementById(`${inputId}-error`);
+        if (errorEl) {
+            errorEl.textContent = message;
+        }
+    }
+
+    function clearError(inputId) {
+        const errorEl = document.getElementById(`${inputId}-error`);
+        if (errorEl) {
+            errorEl.textContent = '';
+        }
+    }
+
+    function validateForm() {
+        let isValid = true;
+        
+        // Name validation
+        const name = document.getElementById('name');
+        if (name && name.value.trim().length < 2) {
+            showError('name', 'Please enter your full name');
+            isValid = false;
+        } else {
+            clearError('name');
+        }
+
+        // Email validation
+        const email = document.getElementById('email');
+        if (email && !validateEmail(email.value)) {
+            showError('email', 'Please enter a valid email address');
+            isValid = false;
+        } else {
+            clearError('email');
+        }
+
+        // Subject validation
+        const subject = document.getElementById('subject');
+        if (subject && !subject.value) {
+            showError('subject', 'Please select a subject');
+            isValid = false;
+        } else {
+            clearError('subject');
+        }
+
+        // Message validation
+        const message = document.getElementById('message');
+        if (message && message.value.trim().length < 10) {
+            showError('message', 'Please enter a message (minimum 10 characters)');
+            isValid = false;
+        } else {
+            clearError('message');
+        }
+
+        return isValid;
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm()) {
+                // Simulate form submission
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<span>Sending...</span>';
+                submitBtn.disabled = true;
+
+                setTimeout(() => {
+                    contactForm.style.display = 'none';
+                    if (formSuccess) {
+                        formSuccess.classList.add('active');
+                    }
+                }, 1500);
+            }
+        });
+
+        // Real-time validation
+        contactForm.querySelectorAll('input, select, textarea').forEach(input => {
+            input.addEventListener('blur', function() {
+                validateForm();
+            });
+        });
+    }
+
+    /* ========================================
+       Gallery Filtering
+       ======================================== */
+    
+    function filterGallery(category) {
+        galleryItems.forEach(item => {
+            const itemCategory = item.dataset.category;
+            
+            if (category === 'all' || itemCategory === category) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                }, 50);
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
+
+    /* ========================================
+       Team Page - Division Filtering
+       ======================================== */
+    
+    const divisionBlocks = document.querySelectorAll('.division-team-block');
+    const memberCards = document.querySelectorAll('.member-card');
+    
+    function filterTeamMembers(division) {
+        if (division === 'all') {
+            // Show all division blocks and members
+            divisionBlocks.forEach(block => {
+                block.style.display = 'block';
+                setTimeout(() => {
+                    block.style.opacity = '1';
+                }, 50);
+            });
+            memberCards.forEach(card => {
+                card.classList.remove('hidden');
+            });
+        } else {
+            // Filter by division
+            divisionBlocks.forEach(block => {
+                const blockDivision = block.dataset.division;
+                if (blockDivision === division) {
+                    block.style.display = 'block';
+                    setTimeout(() => {
+                        block.style.opacity = '1';
+                    }, 50);
+                } else {
+                    block.style.opacity = '0';
+                    setTimeout(() => {
+                        block.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+    }
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            const filter = this.dataset.filter;
+            
+            // Check if we're on gallery or team page
+            if (galleryItems.length > 0) {
+                filterGallery(filter);
+            } else if (divisionBlocks.length > 0) {
+                filterTeamMembers(filter);
+            }
+        });
+    });
+
+    /* ========================================
+       Hover Effects
+       ======================================== */
+    
+    // Magnetic button effect
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+        btn.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            this.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+        });
+
+        btn.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+        });
+    });
+
+    /* ========================================
+       Card Tilt Effect
+       ======================================== */
+    
+    document.querySelectorAll('.spec-card, .collab-card').forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateX(4px)`;
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+        });
+    });
+
+    /* ========================================
+       Page Transitions
+       ======================================== */
+    
+    // Fade in on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.add('loaded');
+        
+        // Trigger initial animations for elements in viewport
+        setTimeout(() => {
+            animatedElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }, 100);
+    });
+
+    /* ========================================
+       Scroll Event Listener
+       ======================================== */
+    
+    let ticking = false;
+
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                handleNavbarScroll();
+                handleParallax();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* ========================================
+       Resize Handler
+       ======================================== */
+    
+    let resizeTimeout;
+
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            // Close mobile nav on resize to desktop
+            if (window.innerWidth > 968) {
+                closeMobileNav();
+            }
+        }, 250);
+    });
+
+    /* ========================================
+       Keyboard Navigation
+       ======================================== */
+    
+    document.addEventListener('keydown', function(e) {
+        // Escape key closes mobile nav
+        if (e.key === 'Escape' && navMenu && navMenu.classList.contains('active')) {
+            closeMobileNav();
+        }
+    });
+
+    /* ========================================
+       Preload Critical Assets
+       ======================================== */
+    
+    // Preload any critical images when they come into view
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+
+    /* ========================================
+       Performance: Reduce motion for users who prefer it
+       ======================================== */
+    
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    
+    if (prefersReducedMotion.matches) {
+        // Disable parallax and complex animations
+        parallaxLayers.forEach(layer => {
+            layer.style.transform = 'none';
+        });
+        
+        animatedElements.forEach(el => {
+            el.style.transition = 'none';
+            el.classList.add('visible');
+        });
+    }
+
+    /* ========================================
+       Console Easter Egg
+       ======================================== */
+    
+    console.log(`
+    ████████╗███████╗ █████╗ ███╗   ███╗
+    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
+       ██║   █████╗  ███████║██╔████╔██║
+       ██║   ██╔══╝  ██╔══██║██║╚██╔╝██║
+       ██║   ███████╗██║  ██║██║ ╚═╝ ██║
+       ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
+           ██╗ █████╗ ████████╗ █████╗ ██╗   ██╗██╗   ██╗
+           ██║██╔══██╗╚══██╔══╝██╔══██╗╚██╗ ██╔╝██║   ██║
+           ██║███████║   ██║   ███████║ ╚████╔╝ ██║   ██║
+      ██   ██║██╔══██║   ██║   ██╔══██║  ╚██╔╝  ██║   ██║
+      ╚█████╔╝██║  ██║   ██║   ██║  ██║   ██║   ╚██████╔╝
+       ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ 
+    
+    🏎️ Engineered for Victory
+    🔧 Built with passion
+    
+    Interested in joining our team? Visit our website!
+    `);
+
+})();
+
+</script>
+</body>
+</html>
